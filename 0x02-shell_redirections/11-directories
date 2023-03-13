@@ -1,2 +1,3 @@
 #!/bin/bash
-shopt -s globstar; echo **/ | grep -c '/$'
+find . -mindepth 1 -type d -exec echo x \; | wc -l | tr -d ' '
+
