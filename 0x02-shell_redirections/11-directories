@@ -1,2 +1,3 @@
 #!/bin/bash
-dirs=$(find . -type d); echo "${dirs}" | wc -l
+dirs=$(find . -type d -not -path '*/\.*'); echo "${dirs}" | wc -l
+
