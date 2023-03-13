@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -o "\b[a-zA-Z][^[:space:]]*" /etc/ssh/sshd_config
